@@ -48,7 +48,7 @@ public class Ejercicio2 {
 		
 		//Ahora, invocamos la función eco e insertamos la variable num.
 		
-		numeros(num1,num2);
+		numeros(num1, num2);
 				
 		//Cerramos el escáner.
 		sc.close();
