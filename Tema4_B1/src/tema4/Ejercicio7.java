@@ -23,28 +23,22 @@ public class Ejercicio7 {
 		
 		//Establecemos una variable contador.
 		int contador=0;
-		boolean primo;
-		int resultado;
-		
+	
 		//Hacemos un bucle que vaya probando los divisores.
 		for (int i=1; i<=num; i++) {
-			
-			//Pedimos los números primos.
-			primo=esPrimo(i);
-			
-			if (primo=true) {
-				
-				 resultado=num%i;
-				 
-				 System.out.println(i);
-				 
-				 contador++;
-				
-			}
-			
 		
+			//Solicitamos los divisores de num.
+			if (num%i==0) {
+				
+				//De esos divisores, pedimos los números primos, a través de la función esPrimo.
+				if (esPrimo(i)) {
+				
+				 contador++;	
+				}
+			}
 		}
 		
+		//Devolvemos la variable contador.
 		return contador;
 	}
 
@@ -63,10 +57,10 @@ public class Ejercicio7 {
 		System.out.print("Introduzca un número y pulse Intro: ");
 		num=sc.nextInt();
 						
-		//Ahora, invocamos la función eco e insertamos la variable num.
+		//Ahora, invocamos la función div e insertamos la variable num.
 		resultado= div(num);
 						
-		System.out.println(resultado);
+		System.out.println(num+" tiene "+resultado+" divisores primos.");
 				
 		//Cerramos el escáner.
 		sc.close();
