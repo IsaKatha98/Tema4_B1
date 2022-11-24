@@ -43,15 +43,11 @@ public class Ejercicio8 {
 				
 				break;
 			
-			
-			//En caso de que se introduzca una opción diferente a las posibles
-				
+			//En caso de que se introduzca una opción diferente a las posibles		
 			default:
 				
 				System.out.println("ERROR. Ha elegido una opción no válida.");
-				break;
-				
-			
+				break;		
 		}
 			
 		//Devolvemos el resultado de la función, guardado en la variable op.

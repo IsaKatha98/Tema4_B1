@@ -8,10 +8,14 @@ public class Ejercicio6 {
 		
 		boolean esPrimo=true;
 		
-		for (int i=2; i<=n/2; i++) {
+		for (int i=2; i<n; i++) {
 			
-			esPrimo=false;
-			break;
+			if (n%i==0) {
+			
+				esPrimo=false;
+				break;
+				
+			}
 		}
 		
 		return esPrimo;

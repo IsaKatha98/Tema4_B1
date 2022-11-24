@@ -7,17 +7,13 @@ public class Ejercicio4 {
 	//Creamos una función mayor, con parámetros dos números enteros.
 	static int mayor (int n1, int n2) {
 		
-		//Declaramos una variable donde se guardará el valor mayor.
-		int max;
+		//Declaramos una variable donde se guardará el valor mayorm, y la inicializamos como n1.
+		int max=n1;
 		
 		//Para distinguir cuál es el mayor de los dos, utilizaremos una condición if-else.
-		if (n1<n2) {
+		if (n2>n1) {
 			
 			max=n2;
-		
-		} else {
-			
-			max=n1;
 		}
 		
 		//Devolvemos el resultado de la condición.
