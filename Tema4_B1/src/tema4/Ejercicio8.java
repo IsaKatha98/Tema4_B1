@@ -21,16 +21,7 @@ public class Ejercicio8 {
 			
 			case 2:
 				
-				if (n1<n2) {
-					
-					op=n2-n1;
-					
-				} else {
-					
-					op=n1-n2;
-					
-				}
-				
+				op=n1-n2;
 				break;
 		
 			case 3: 
@@ -40,13 +31,13 @@ public class Ejercicio8 {
 				
 			case 4:
 				
-				if (n1<n2) {
+				if (n2!=0&&n1!=0) {
 					
-					op= n2/n1;
+					op= n1/n2;
 				
 				} else {
 					
-					op=n1/n2;
+					System.out.println("ERROR. El segundo número debe ser distinto de 0.");
 					
 				}
 				

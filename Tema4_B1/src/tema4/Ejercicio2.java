@@ -7,23 +7,10 @@ public class Ejercicio2 {
 	//Creamos una función numeros, con parámetros dos números enteros.
 	static void numeros(int n1, int n2) {
 		
-		//Como queremos presentar los números que haya entre n1 y n2, creamos una condición para distinguir el número mayor del menor.
-		if (n1>n2) {
+		for (int i=n1; i<=n2; i++) {
 			
-			//Ahora hacemos un bucle for para que imprima lo que queremos.
-			for (int i=n2; i<=n1; i++) {
-				
-				System.out.println(i);
-			}
-		
-		} else {
-			
-			for (int i=n1; i<n2; i++) {
-				
-				System.out.println(i);
-			}
+			System.out.println(i);
 		}
-		
 		
 	}
 
@@ -46,14 +33,25 @@ public class Ejercicio2 {
 		System.out.print("Introduzca otro número y pulse Intro: ");
 		num2=sc.nextInt();
 		
-		//Ahora, invocamos la función eco e insertamos la variable num.
+		//Como queremos presentar los números que haya entre num1 y num2, debemos asegurarnos que num1 es menor que num2.
+		//Esto se hace en el main, no en la función.
+		if (num1<num2) {
+					
+			//Invocamos la función.
+					
+			numeros(num1, num2);
+			
+		} else {
+					
+			//Aquí, invocamos la función numeros pero sobreescribimos las variables al revés, para asegurarnos que la pequeña es
+			//la primera que se lee.
 		
-		numeros(num1, num2);
+			numeros(num2, num1);
+		}
 				
 		//Cerramos el escáner.
 		sc.close();
 				
-
 	}
 
 }
